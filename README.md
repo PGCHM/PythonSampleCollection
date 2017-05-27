@@ -5,14 +5,19 @@ The following shows the batch script that could go into a folder, open all the f
 '''
 
 @echo off
+
 setlocal
+
 pushd <Path where you have placed the .cs files>
 
 rem case-insensitive search for the string "SOME TEXT" in all html files
+
 rem in the current directory, piping the output to the results.txt file
+
 rem in teh same directory
 
 findstr /s /ip /c:"[CR" *.cs > results.txt
+
 for /f "tokens=2 delims=[]" %%a in (results.txt) do echo %%a >> results1.txt
 
 '''
