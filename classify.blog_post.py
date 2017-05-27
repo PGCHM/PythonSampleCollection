@@ -1,5 +1,6 @@
 ##
 # ref: Github@machinalis
+# http://www.machinalis.com/blog/python-for-geospatial-data-processing/
 ##
 
 import numpy as np
